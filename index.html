@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Door AR POC</title>
+    <style>
+      body {
+        background-color: #fafafa;
+        color: #333333;
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica,
+          Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+        font-size: 14px;
+        line-height: 1.5;
+        font-synthesis: none;
+        -moz-font-feature-settings: "kern";
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      .section {
+        padding-top: 4em;
+        padding-bottom: 4em;
+      }
+
+      .container {
+        margin: 0 auto;
+        max-width: 60rem;
+        text-align: center;
+      }
+
+      .summary {
+        margin: 0 auto;
+        max-width: 22rem;
+      }
+
+      h1 {
+        font-size: 40px;
+        font-weight: 700;
+        margin: 0;
+      }
+
+      p {
+        margin: 1em 0 0;
+        font-size: 17px;
+        font-weight: 400;
+      }
+
+      a {
+        color: #0070c9;
+      }
+
+      .qv-item {
+        display: inline-block;
+        margin: 4em auto 0;
+        background-color: #fff;
+        max-width: 12rem;
+        border-radius: 10px;
+        padding: 3rem;
+      }
+
+      .qv-item:focus {
+        outline: 3px solid rgba(131, 192, 253, 0.5);
+        outline-offset: 1px;
+      }
+
+      .qv-item__preview {
+        display: block;
+        height: auto;
+        max-width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="section">
+      <div class="container">
+        <h1>Door AR</h1>
+        <div class="summary">
+          <p>
+            Tap the door below on a iPhone or iPad to view the object and place
+            it in AR.
+          </p>
+        </div>
+        <a
+          class="qv-item"
+          href="models/livingston-slab-36x80-smooth_mp.usdz"
+          rel="ar"
+        >
+          <img
+            class="qv-item__preview"
+            src="https://embed.widencdn.net/img/masonite/uljcm6m37y/750x750px/MPS-LV_84-36.png?keep=c&crop=no"
+            alt=""
+          />
+        </a>
+      </div>
+    </section>
+  </body>
+</html>
