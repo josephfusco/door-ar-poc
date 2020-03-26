@@ -93,13 +93,28 @@
           </p>
         </div>
         <a
+          id="ar-link-1"
           class="qv-item"
-          href="models/test-model.usdz#applePayButtonType=buy&checkoutTitle=Example%20Center%20Lite%20Door&checkoutSubtitle=Low%20maintenance%20and%20excellent%20weather%20resistance&price=$869"
+          href="models/test-model.usdz#callToAction=View%20Product%20Details&checkoutTitle=Example%20Center%20Lite%20Door&checkoutSubtitle=Excellent%20weather%20resistance"
           rel="ar"
         >
           <img class="qv-item__preview" src="models/test-model.jpg" alt="" />
         </a>
       </div>
     </section>
+    <script>
+      const linkElement = document.getElementById("ar-link-1");
+      linkElement.addEventListener(
+        "message",
+        function(event) {
+          if (event.data == "_apple_ar_quicklook_button_tapped") {
+            // Redirect user to mock product details page.
+            window.location.href =
+              "https://residential.masonite.com/products/door/JxJ4p8";
+          }
+        },
+        false
+      );
+    </script>
   </body>
 </html>
